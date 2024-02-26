@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: url-deployment
-        image: urls_service
+        image: junidock/urls_service
         ports:
         - containerPort: 5000
