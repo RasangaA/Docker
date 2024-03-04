@@ -18,4 +18,4 @@ spec:
         image: junidock/urls_service:v1
         ports:
         - containerPort: 5000
-      imagePullPolicy: Always
+        imagePullPolicy: Always
