@@ -9,5 +9,6 @@ spec:
   selector:
     app: auth-deployment
   ports:
-    - port: 5001 
+    - port: 82
+      targetPort: 5001 
       nodePort: 30923  
