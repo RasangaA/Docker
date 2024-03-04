@@ -16,6 +16,7 @@ spec:
       containers:
       - name: url-deployment
         image: junidock/urls_service:v1
+        imagePullPolicy: Always
         ports:
         - containerPort: 5000
-        imagePullPolicy: Always
+       
