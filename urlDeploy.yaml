@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: url-deployment
+  namespace: default
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: url-deployment
+  template:
+    metadata:
+      labels:
+        app: url-deployment
+    spec:
+      containers:
+      - name: url-deployment
+        image: junidock/urls_service:v1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5000
+       
