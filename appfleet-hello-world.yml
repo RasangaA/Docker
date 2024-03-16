@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+name: openfaas
+gateway: http://127.0.0.1:8080
+functions:
+appfleet-hello-world:
+lang: node
+handler: ./appfleet-hello-world
+image: rasangaa/appfleet-hello-world:latest
